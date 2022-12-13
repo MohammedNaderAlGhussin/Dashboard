@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awosome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Settings</title>
+  </head>
+  <body class="font-fontPage">
+    <div class="bg-colorPage min-h-screen flex">
+      <!-- Start Aside -->
+      <aside
+        class="p-2.5 md:p-5 md:px-[15px] bg-white relative shadow-asideShadow"
+      >
+        <h3
+          class="relative mt-2.5 md:mt-0 text-center p-1 mb-7 font-bold text-[15px] md:text-lg md:beforee md:afterr"
+        >
+          Nader
+        </h3>
+        <ul>
+          <li>
+            <a class="link" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="span">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="link active" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="span">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="span">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="span">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="span">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="span">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="span">Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="span">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <section class="w-full overflow-hidden">
+        <!-- Start Header -->
+        <div class="p-3 bg-white flex justify-between items-center">
+          <article class="relative">
+            <i
+              class="fa-solid fa-magnifying-glass font-bold text-grayColor absolute top-1/2 -translate-y-1/2 left-[15px]"
+            ></i>
+            <input
+              class="p-2 outline-none rounded-[12px] border text-grayColor border-[#ccc] pl-8 ml-1.5 focus:placeholder:opacity-0 focus:pr-6 duration-500"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </article>
+          <article class="flex items-center">
+            <span class="relative bill-notify">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              class="w-8 h-8 rounded-full ml-3"
+              src="./imgs/avatar.png"
+              alt=""
+            />
+          </article>
+        </div>
+        <!-- End Header -->
+        <h1
+          class="mt-4 mb-10 ml-4 font-bold text-[25px] md:text-[33px] relative head-progress"
+        >
+          Settings
+        </h1>
+        <!-- Start Content -->
+        <div class="flex flex-wrap mx-2.5 mb-3 md:mx-5 gap-5">
+          <!-- Start Settings Control -->
+          <atricle class="article text-start w-[600px]">
+            <div class="special-div">
+              <h2 class="special-heading">Site Control</h2>
+              <p class="special-para">
+                Control The Website If There Is Maintenance
+              </p>
+            </div>
+            <div class="flex flex-col pt-0 p-5">
+              <div
+                class="flex flex-row justify-between items-center text-start"
+              >
+                <div>
+                  <span class="block special-heading text-[17px]"
+                    >Website Control</span
+                  >
+                  <p class="special-para text-[14px]">
+                    Open/Close Website And Type The Reason
+                  </p>
+                </div>
+                <label for="">
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                </label>
+              </div>
+              <textarea
+                class="Textarea text-grayColor focus:placeholder:opacity-0 mt-3 outline-none resize-none border-[2px] rounded-[5px] p-2.5 border-[#ccc] w-full h-[150px]"
+                placeholder="Close Message Content"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </atricle>
+          <!-- Start Settings Control -->
+          <!-- Start General Info -->
+          <artcile class="article w-[600px]">
+            <div class="special-div">
+              <h2 class="special-heading">Genreal Info</h2>
+              <p class="special-para">Genreal Info About Your Account</p>
+            </div>
+            <form
+              action=""
+              class="p-5 flex flex-col text-start gap-4 text-grayColor"
+            >
+              <div class="flex flex-col gap-2">
+                <label class="font-bold" for="">First Name</label>
+                <input
+                  class="outline-none border-[2px] focus:placeholder:opacity-0 border-garColor p-2.5 rounded-[7px]"
+                  type="text"
+                  placeholder="First Name"
+                />
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <label class="font-bold" for="">Last Name</label>
+                <input
+                  class="outline-none border-[2px] focus:placeholder:opacity-0 border-garColor p-2.5 rounded-[7px]"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </div>
+
+              <div class="flex flex-row justify-between gap-3 items-end">
+                <div class="flex flex-col gap-2 flex-1">
+                  <label class="font-bold" for="">Email</label>
+                  <input
+                    class="outline-none border-[2px] focus:placeholder:opacity-0 border-garColor p-2.5 rounded-[7px]"
+                    type="email"
+                    placeholder="business.naderghu@gmail.com"
+                  />
+                </div>
+                <a
+                  class="hover:text-blueAltColor duration-300 block mb-3 text-blueColor font-bold text-[20px]"
+                  href=""
+                  >Change</a
+                >
+              </div>
+            </form>
+          </artcile>
+          <!-- End General Info -->
+          <!-- Start Security Info -->
+          <article class="article w-[600px] text-start">
+            <div class="special-div">
+              <h2 class="special-heading">Security Info</h2>
+              <p class="special-para">
+                Security Information About Your Account
+              </p>
+            </div>
+            <div class="p-5">
+              <section
+                class="flex flex-row justify-between items-center pb-10 mb-5 border-b-[1px] border-[#ccc]"
+              >
+                <div class="flex flex-col gap-1">
+                  <span class="block text-[18px]">Password</span>
+                  <p class="text-grayColor text-[13px] md:text-[17px]">
+                    Last Change On 25/10/2021
+                  </p>
+                </div>
+                <span
+                  class="text-white bg-blueColor p-2 rounded-[6px] cursor-pointer duration-300 hover:bg-blueAltColor"
+                  >Change</span
+                >
+              </section>
+
+              <section
+                class="flex flex-row justify-between items-center pb-10 mb-5 border-b-[1px] border-[#ccc]"
+              >
+                <div class="flex flex-col gap-1">
+                  <span class="block text-[18px]"
+                    >Two-Factor Authentication</span
+                  >
+                  <p class="text-grayColor text-[13px] md:text-[17px]">
+                    Enable/Disable The Feature
+                  </p>
+                </div>
+                <label for="">
+                  <input class="toggle-checkbox" type="checkbox" checked />
+                </label>
+              </section>
+
+              <section class="flex flex-row justify-between items-center pb-8">
+                <div class="flex flex-col gap-1">
+                  <span class="block text-[18px]">Devices</span>
+                  <p class="text-grayColor text-[13px] md:text-[17px]">
+                    Check The Login Devices List
+                  </p>
+                </div>
+                <span
+                  class="text-black bg-[#eee] cursor-pointer p-2 rounded-[6px]"
+                  >Devices</span
+                >
+              </section>
+            </div>
+          </article>
+          <!-- End Security Info -->
+          <!-- Start Social Info -->
+          <article class="article w-[600px]">
+            <div class="special-div">
+              <h2 class="special-heading">Social Info</h2>
+              <p class="special-para">Social Media Information</p>
+            </div>
+            <div class="p-5 flex flex-col gap-1">
+              <section class="socialMSection flex items-center p-2">
+                <i
+                  class="fa-brands fa-twitter duration-300 flex justify-center items-center p-2 w-14 h-14 text-grayColor bg-[#f6f6f6] border-[1px] rounded-bl-[6px] rounded-tl-[6px] border-r-0 border-[#ddd]"
+                ></i>
+                <input
+                  class="focus:placeholder:opacity-0 w-full outline-none pl-2.5 h-14 text-grayColor bg-[#f6f6f6] border-[1px] border-[#ddd] rounded-br-[6px] rounded-tr-[6px]"
+                  type="text"
+                  placeholder="Twitter Username"
+                />
+              </section>
+
+              <section class="socialMSection flex items-center p-2">
+                <i
+                  class="fa-brands fa-facebook-f duration-300 flex justify-center items-center p-2 w-14 h-14 text-grayColor bg-[#f6f6f6] border-[1px] rounded-bl-[6px] rounded-tl-[6px] border-r-0 border-[#ddd]"
+                ></i>
+                <input
+                  class="focus:placeholder:opacity-0 w-full outline-none pl-2.5 h-14 text-grayColor bg-[#f6f6f6] border-[1px] border-[#ddd] rounded-br-[6px] rounded-tr-[6px]"
+                  type="text"
+                  placeholder="Facebook Username"
+                />
+              </section>
+
+              <section class="socialMSection flex items-center p-2">
+                <i
+                  class="fa-brands fa-linkedin duration-300 flex justify-center items-center p-2 w-14 h-14 text-grayColor bg-[#f6f6f6] border-[1px] rounded-bl-[6px] rounded-tl-[6px] border-r-0 border-[#ddd]"
+                ></i>
+                <input
+                  class="focus:placeholder:opacity-0 w-full outline-none pl-2.5 h-14 text-grayColor bg-[#f6f6f6] border-[1px] border-[#ddd] rounded-br-[6px] rounded-tr-[6px]"
+                  type="text"
+                  placeholder="Linkedin Username"
+                />
+              </section>
+
+              <section class="socialMSection flex items-center p-2">
+                <i
+                  class="fa-brands fa-youtube duration-300 flex justify-center items-center p-2 w-14 h-14 text-grayColor bg-[#f6f6f6] border-[1px] rounded-bl-[6px] rounded-tl-[6px] border-r-0 border-[#ddd]"
+                ></i>
+                <input
+                  class="focus:placeholder:opacity-0 w-full outline-none pl-2.5 h-14 text-grayColor bg-[#f6f6f6] border-[1px] border-[#ddd] rounded-br-[6px] rounded-tr-[6px]"
+                  type="text"
+                  placeholder="Youtube Username"
+                />
+              </section>
+            </div>
+          </article>
+          <!-- End Social Info -->
+          <!-- Start Widget Control -->
+          <article class="article w-[600px]">
+            <div class="special-div">
+              <h2 class="special-heading">Widgets Control</h2>
+              <p class="special-para">Show/Hide Widgets</p>
+            </div>
+            <div class="p-5 pl-8 pt-0 flex flex-col">
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="one"
+                  checked
+                />
+                <label class="text-[20px]" for="one">Quick Draft</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="two"
+                  checked
+                />
+                <label class="text-[20px]" for="two">Yearly Targets</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="three"
+                  checked
+                />
+                <label class="text-[20px]" for="three"
+                  >Tickets Statistics</label
+                >
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="four"
+                  checked
+                />
+                <label class="text-[20px]" for="four">Latest News</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="five"
+                />
+                <label class="text-[20px]" for="five">Latest Tasks</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-4 h-4"
+                  type="checkbox"
+                  name=""
+                  id="six"
+                  checked
+                />
+                <label class="text-[20px]" for="six">Top Search Items</label>
+              </div>
+            </div>
+          </article>
+          <!-- End Widget Control -->
+          <!-- Start Back Up Managere -->
+          <article class="article w-[600px]">
+            <div class="special-div">
+              <h2 class="special-heading">Backup Manager</h2>
+              <p class="special-para">Control Backup Time & Location</p>
+            </div>
+            <div class="p-5 pl-8 pt-0 flex flex-col">
+              <div class="flex items-center gap-2 mb-3">
+                <input
+                  class="block w-5 h-5"
+                  type="radio"
+                  name=""
+                  id="day"
+                  checked
+                />
+                <label class="text-[20px]" for="day">Daily</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input class="block w-5 h-5" type="radio" name="" id="week" />
+                <label class="text-[20px]" for="week">Weekly</label>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <input class="block w-5 h-5" type="radio" name="" id="month" />
+                <label class="text-[20px]" for="month">Monthly</label>
+              </div>
+            </div>
+            <div
+              class="servers flex flex-wrap md:flex-nowrap items-center text-center gap-1 border-t-[1px] border-[#eee] p-5 pt-5"
+            >
+              <input
+                class="server-input appearance-none"
+                type="radio"
+                name="servers"
+                id="server-one"
+              />
+              <div
+                class="server mb-4 rounded-[10px] w-full border-2 border-[#eee]"
+              >
+                <label class="block m-4 cursor-pointer" for="server-one">
+                  <i class="fa-solid fa-server block mb-2.5"></i>
+                  Megaman
+                </label>
+              </div>
+
+              <input
+                class="server-input appearance-none"
+                type="radio"
+                name="servers"
+                id="server-two"
+                checked
+              />
+              <div
+                class="server mb-4 rounded-[10px] w-full border-2 border-[#eee]"
+              >
+                <label class="block m-4 cursor-pointer" for="server-two">
+                  <i class="fa-solid fa-server block mb-2.5"></i>
+                  Nader
+                </label>
+              </div>
+
+              <input
+                class="server-input appearance-none"
+                type="radio"
+                name="servers"
+                id="server-three"
+              />
+              <div
+                class="server mb-4 rounded-[10px] w-full border-2 border-[#eee]"
+              >
+                <label class="block m-4 cursor-pointer" for="server-three">
+                  <i class="fa-solid fa-server block mb-2.5"></i>
+                  Sigma
+                </label>
+              </div>
+            </div>
+          </article>
+          <!-- End Back Up Managere -->
+        </div>
+        <!-- End Content -->
+      </section>
+    </div>
+  </body>
+</html>

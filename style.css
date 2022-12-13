@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .beforee {
+    @apply before:absolute before:content-[""] before:w-[80px] before:bg-black before:h-[3px]  before:-bottom-2 before:-translate-x-1/2 before:left-1/2;
+  }
+  .afterr {
+    @apply after:absolute after:content-[""] after:w-[18px]  after:h-[18px] after:bg-black after:rounded-full after:-bottom-[15px] after:left-1/2 after:-translate-x-1/2 after:border-4 after:border-white;
+  }
+  .link {
+    @apply flex justify-center md:justify-start  items-center text-[14px] rounded-[6px] p-3 md:pr-16 duration-200 mb-2 hover:bg-[#f6f6f6];
+  }
+  .active {
+    @apply bg-[#f6f6f6];
+  }
+  .span {
+    @apply hidden md:block ml-2;
+  }
+  .bill-notify {
+    @apply before:content-[""] before:absolute before:w-2.5 before:h-2.5 before:rounded-full before:bg-redColor before:-right-2 before:-top-[5px];
+  }
+  .head-progress {
+    @apply before:content-[""] before:absolute before:h-1 before:left-0 before:-bottom-2.5 before:bg-white before:w-[140px] after:content-[""] after:absolute after:h-1 after:w-10 after:-bottom-2.5 after:left-0.5 after:bg-black;
+  }
+  .article {
+    @apply bg-white rounded-[10px] flex-grow w-[400px] text-center md:text-start overflow-hidden block;
+  }
+  .btn {
+    @apply text-white p-1 block w-fit mb-4 ml-auto mr-4 -mt-1 bg-blueColor rounded-[7px] duration-300 hover:bg-blueAltColor cursor-pointer;
+  }
+  .special-div {
+    @apply p-2.5 bg-white rounded-[10px];
+  }
+  .special-heading {
+    @apply font-bold text-[22px] text-black mb-2;
+  }
+  .special-para {
+    @apply text-grayColor mb-4 -mt-1;
+  }
+  .ticket-section {
+    @apply border border-grayColor p-5 rounded-[10px] flex flex-col items-center justify-center w-[45%] gap-2;
+  }
+  .widget-span {
+    @apply block font-bold text-[18px] lg:text-[15px] text-start;
+  }
+  .widget-para {
+    @apply text-grayColor text-[10px];
+  }
+  .widget-label-span {
+    @apply block font-bold text-[#333333b8] text-[12px] mt-4 md:mt-0 p-2 bg-[#eee] rounded-[6px];
+  }
+  .icon-rotation {
+    @apply duration-500 hover:rotate-6 hover:scale-110;
+  }
+  .done {
+    @apply line-through opacity-[0.3];
+  }
+  .project-li {
+    @apply flex items-center mb-6 before:content-[''] before:w-6 before:h-6 before:rounded-full before:block before:mr-[15px] before:z-10 before:bg-white before:border-2 before:border-blueColor;
+  }
+  .project-done {
+    @apply before:bg-blueColor;
+  }
+  .project-process {
+    @apply before:bg-[#0075ff4f];
+  }
+  .label {
+    @apply text-[13px];
+  }
+  /* .toggle-switcher {
+    @apply bg-[#ccc] w-[78px] h-[32px] rounded-[16px] relative duration-300 cursor-pointer  before:content-['x']  before:text-[#aaa] before:bg-white before:w-6 before:h-6 before:rounded-full before:absolute before:top-1 before:left-1 before:flex before:justify-center before:items-center;
+  } */
+}
+
+@layer utilities {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background-color: #0075ff;
+  }
+  /* Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0d69d5;
+  }
+  /* Toggle CheckBox Switcher */
+  /* w-20 h-20 checked left 58  82 82   */
+  .toggle-checkbox {
+    ::-webkit-appearance: none;
+    appearance: none;
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .toggle-checkbox::before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: bold;
+    background-color: white;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .toggle-checkbox:checked {
+    background-color: #0075ff;
+  }
+  .toggle-checkbox:checked::before {
+    content: "\f00c";
+    left: 50px;
+    color: #0075ff;
+  }
+  /* Socail Media Info */
+  .socialMSection:focus-within i {
+    color: black;
+  }
+  /* Backup Server Input */
+  .server-input:checked + .server {
+    border-color: #0075ff;
+    color: #0075ff;
+  }
+  input:focus::placeholder,
+  .Textarea:focus::placeholder {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  /* Plans Section */
+  .top.green {
+    outline: 3px solid #22c55e;
+  }
+  .top.blue {
+    outline: 3px solid #0d69d5;
+  }
+  .top.orange {
+    outline: 3px solid #f59e0b;
+  }
+  .yes {
+    color: #22c55e;
+  }
+  .help {
+    margin-left: auto;
+    cursor: pointer;
+    color: #888;
+  }
+  .plan ul li i:not(.yes, .help) {
+    color: #f44336;
+  }
+}

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awosome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Files</title>
+  </head>
+  <body class="font-fontPage">
+    <div class="bg-colorPage min-h-screen flex">
+      <!-- Start Aside -->
+      <aside
+        class="p-2.5 md:p-5 md:px-[15px] bg-white relative shadow-asideShadow"
+      >
+        <h3
+          class="relative mt-2.5 md:mt-0 text-center p-1 mb-7 font-bold text-[15px] md:text-lg md:beforee md:afterr"
+        >
+          Nader
+        </h3>
+        <ul>
+          <li>
+            <a class="link" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="span">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="span">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="span">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="span">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="span">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="span">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a class="link active" href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="span">Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="span">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- End Aside -->
+      <section class="w-full overflow-hidden">
+        <!-- Start Header -->
+        <div class="p-3 bg-white flex justify-between items-center">
+          <article class="relative">
+            <i
+              class="fa-solid fa-magnifying-glass font-bold text-grayColor absolute top-1/2 -translate-y-1/2 left-[15px]"
+            ></i>
+            <input
+              class="p-2 outline-none rounded-[12px] border text-grayColor border-[#ccc] pl-8 ml-1.5 focus:placeholder:opacity-0 focus:pr-6 duration-500"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </article>
+          <article class="flex items-center">
+            <span class="relative bill-notify">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              class="w-8 h-8 rounded-full ml-3"
+              src="./imgs/avatar.png"
+              alt=""
+            />
+          </article>
+        </div>
+        <!-- End Header -->
+        <h1
+          class="mt-4 mb-10 ml-4 font-bold text-[25px] md:text-[33px] relative head-progress"
+        >
+          Files
+        </h1>
+        <!-- Satrt Content -->
+        <div class="flex flex-wrap mx-2.5 mb-3 md:mx-5 gap-5">
+          <!-- Start Files Statistics -->
+          <article class="article w-[1000px]">
+            <div class="special-div">
+              <h2 class="special-heading">Files Statistics</h2>
+            </div>
+            <div class="p-2.5 flex flex-col">
+              <div
+                class="flex items-center border-[1px] border-[#eee] p-2.5 rounded-[6px] mb-4 text-[13px]"
+              >
+                <i
+                  class="fa-regular fa-file-pdf fa-lg flex justify-center items-center bg-[#0075ff4f] text-blueColor w-10 h-10 mr-2.5"
+                ></i>
+                <div class="info">
+                  <span>PDF Files</span>
+                  <span class="text-grayColor block mt-[5px]">130</span>
+                </div>
+                <div class="size text-grayColor ml-auto">6.5GB</div>
+              </div>
+
+              <div
+                class="flex items-center border-[1px] border-[#eee] p-2.5 rounded-[6px] mb-4 text-[13px]"
+              >
+                <i
+                  class="fa-regular fa-images fa-lg flex justify-center items-center bg-[#22c55e4a] text-greenColor w-10 h-10 mr-2.5"
+                ></i>
+                <div class="info">
+                  <span>Images</span>
+                  <span class="text-grayColor block mt-[5px]">115 Files</span>
+                </div>
+                <div class="size text-grayColor ml-auto">3.5GB</div>
+              </div>
+
+              <div
+                class="flex items-center border-[1px] border-[#eee] p-2.5 rounded-[6px] mb-4 text-[13px]"
+              >
+                <i
+                  class="fa-regular fa-file-word fa-lg flex justify-center items-center bg-[#ff00004e] text-redColor w-10 h-10 mr-2.5"
+                ></i>
+                <div class="info">
+                  <span>Word Files</span>
+                  <span class="text-grayColor block mt-[5px]">110 Files</span>
+                </div>
+                <div class="size text-grayColor ml-auto">3.2GB</div>
+              </div>
+
+              <div
+                class="flex items-center border-[1px] border-[#eee] p-2.5 rounded-[6px] mb-4 text-[13px]"
+              >
+                <i
+                  class="fa-solid fa-file-csv fa-lg flex justify-center items-center bg-[#f59e0b38] text-orangeColor w-10 h-10 mr-2.5"
+                ></i>
+                <div class="info">
+                  <span>CSV Files</span>
+                  <span class="text-grayColor block mt-[5px]">99 Files</span>
+                </div>
+                <div class="size text-grayColor ml-auto">2.9GB</div>
+              </div>
+              <a
+                class="upload bg-blueColor text-white text-[14px] rounded-[6px] block w-fit mt-4 mx-auto mb-0 py-[10px] px-[15px] duration-300 hover:bg-blueAltColor"
+                href="#"
+              >
+                <i class="fa-solid fa-angles-up py-2.5 mr-3 animate-bounce"></i>
+                Upload
+              </a>
+            </div>
+          </article>
+          <!-- End Files Statistics -->
+          <div class="flex flex-wrap gap-5">
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/pdf.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.pdf</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Nader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>20/06/2020</span>
+                  <span>5.5MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/eps.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.eps</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Uploader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>2.7MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/psd.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.psd</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Yosuef</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/dll.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.dll</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Coder</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/png.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.png</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Designer</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>1.1MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/dll.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.dll</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Coder</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>2.2MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/png.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.png</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Designer</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>1.2MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/psd.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.psd</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Oday</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>14.2MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/pdf.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.pdf</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Nader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>30.2MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/avi.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.avi</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Admin</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>12.5MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/eps.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.eps</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Uploader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>2.5MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/pdf.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.pdf</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Nader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>24.5MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/avi.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.avi</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Admin</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>12.5MB </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/eps.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.eps</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Uploader</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>2.5MB</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="article relative w-[200px]">
+              <i
+                class="fa-solid fa-download text-grayColor absolute top-[15px] left-[15px]"
+              ></i>
+              <div class="text-center p-5">
+                <div class="flex flex-col justify-center items-center">
+                  <img
+                    decoding="async"
+                    class="mt-4 mb-4 w-[60px] h-[60px] duration-300 hover:rotate-[5deg]"
+                    src="imgs/psd.svg"
+                    alt=""
+                  />
+                  <div class="text-center mb-2.5 text-[14px]">my-file.psd</div>
+                </div>
+
+                <p class="text-grayColor text-[13px] text-start">Yosuef</p>
+                <div
+                  class="border-t-[1px] border-[#eee] flex justify-between items-center mt-2.5 pt-2.5 text-[13px] text-grayColor"
+                >
+                  <span>16/5/2021</span>
+                  <span>15.1MB</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <!-- End Content -->
+      </section>
+    </div>
+  </body>
+</html>

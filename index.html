@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awosome Library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Main Css File -->
+    <link rel="stylesheet" href="./dist/output.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body class="font-fontPage">
+    <div class="bg-colorPage min-h-screen flex">
+      <!-- Start Aside -->
+      <aside
+        class="p-2.5 md:p-5 md:px-[15px] bg-white relative shadow-asideShadow"
+      >
+        <h3
+          class="relative mt-2.5 md:mt-0 text-center p-1 mb-7 font-bold text-[15px] md:text-lg md:beforee md:afterr"
+        >
+          Nader
+        </h3>
+        <ul>
+          <li>
+            <a class="link active" href="index.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="span">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="span">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="span">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="projects.html">
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="span">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="courses.html">
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="span">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="friends.html">
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="span">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="span">Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="span">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <!-- Start Aside -->
+      <section class="w-full overflow-hidden">
+        <!-- Start Header -->
+        <div class="p-3 bg-white flex justify-between items-center">
+          <article class="relative sreach-icon">
+            <i
+              class="fa-solid fa-magnifying-glass font-bold text-grayColor absolute top-1/2 -translate-y-1/2 left-[15px]"
+            ></i>
+            <input
+              class="p-2 outline-none rounded-[12px] border text-grayColor border-[#ccc] pl-8 ml-1.5 focus:placeholder:opacity-0 focus:pr-6 duration-300"
+              type="search"
+              placeholder="Type A Keyword"
+            />
+          </article>
+          <article class="flex items-center">
+            <span class="relative bill-notify">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img
+              class="w-8 h-8 rounded-full ml-3"
+              src="./imgs/avatar.png"
+              alt=""
+            />
+          </article>
+        </div>
+        <!-- End Header -->
+        <h1
+          class="mt-4 mb-10 ml-4 font-bold text-[25px] md:text-[33px] relative head-progress"
+        >
+          Dashboard
+        </h1>
+        <!-- Start content -->
+        <div class="flex flex-wrap mx-2.5 md:mx-5 gap-5">
+          <!-- Start Welcome Widget -->
+          <article class="article">
+            <div
+              class="p-10 md:p-5 flex justify-center md:justify-between bg-[#eee]"
+            >
+              <div class="">
+                <h2 class="text-[20px] font-bold">Welcome</h2>
+                <p class="mt-1.5 text-grayColor">Nader</p>
+              </div>
+              <div>
+                <img
+                  src="./imgs/welcome.png"
+                  alt=""
+                  class="w-[200px] hidden md:block -mt-2.5"
+                />
+              </div>
+            </div>
+            <img
+              src="./imgs/avatar.png"
+              alt=""
+              class="w-[64px] h-[64px] text-center rounded-full border-2 border-white shadow-imgShadow relative left-1/2 md:left-0 -translate-x-1/2 md:-translate-x-0 p-1 md:ml-5 -mt-8"
+            />
+            <div
+              class="block md:flex text-center my-5 p-5 border-y border-[#eee]"
+            >
+              <div class="flex-1 font-bold text-[14px]">
+                Nader Al Ghussin<span
+                  class="block text-[13px] text-grayColor font-normal mb-4 mt-2"
+                  >Developer</span
+                >
+              </div>
+              <div class="flex-1 font-bold text-[16px]">
+                69<span
+                  class="block text-[13px] text-grayColor font-normal mb-4 mt-2"
+                  >Projects</span
+                >
+              </div>
+              <div class="flex-1 font-bold text-[16px]">
+                6500$<span
+                  class="block text-[13px] text-grayColor font-normal mt-2"
+                  >Earned</span
+                >
+              </div>
+            </div>
+            <a href="" class="btn">Profile</a>
+          </article>
+          <!-- End Welcome Widget -->
+
+          <!-- Start Quick Draft Widget -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Qiuck Draft</h2>
+              <p class="special-para">Write A Draft For Your Ideas</p>
+              <form action="" class="">
+                <input
+                  class="mb-4 bg-[#eee] rounded-[10px] w-full p-2 text-grayColor pl-3 outline-none focus:placeholder:opacity-0 duration-300"
+                  type="text"
+                  placeholder="Title"
+                />
+                <textarea
+                  class="Textarea mb-4 w-full bg-[#eee] resize-none rounded-[10px] p-2 pl-3 outline-none text-grayColor focus:placeholder:opacity-0 duration-300"
+                  placeholder="Your Thought"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <input class="btn mr-0" type="submit" />
+              </form>
+            </div>
+          </article>
+          <!-- End Quick Draft Widget -->
+
+          <!-- Start Targets -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Yearly Targets</h2>
+              <p class="special-para">Targets Of The Year</p>
+            </div>
+            <!-- Box one -->
+            <div class="mb-5 flex flex-row items-center">
+              <div
+                class="w-20 h-20 bg-[#0075ff4f] flex justify-center items-center mx-4"
+              >
+                <i class="fa-solid fa-dollar-sign fa-lg text-blueColor"></i>
+              </div>
+              <div class="mr-1.5 text-start flex-1">
+                <span class="text-grayColor">Money</span>
+                <span class="font-bold block mt-1.6 mb-2.5">$20.000</span>
+                <div class="relative flex-1 h-1 bg-[#0075ff4f]">
+                  <span
+                    class="bg-blueColor absolute top-0 left-0 h-full"
+                    style="width: 80%"
+                  >
+                    <span
+                      class="bg-blueColor text-white absolute bottom-4 right-0 text-[12px] py-1 px-1.5 translate-x-1/2 rounded-[6px] before:content-[''] before:absolute before:border-[10px] before:border-transparent before:border-t-blueColor before:-bottom-[18px]"
+                      >80%</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Box Two  -->
+            <div class="mb-5 flex flex-row items-center">
+              <div
+                class="w-20 h-20 bg-[#f59e0b38] flex justify-center items-center mx-4"
+              >
+                <i class="fa-solid fa-code fa-lg text-orangeColor"></i>
+              </div>
+              <div class="mr-1.5 text-start flex-1">
+                <span class="text-grayColor">Projects</span>
+                <span class="font-bold block mt-1.6 mb-2.5">24</span>
+                <div class="relative flex-1 h-1 bg-[#f59e0b38]">
+                  <span
+                    class="bg-orangeColor absolute top-0 left-0 h-full"
+                    style="width: 55%"
+                  >
+                    <span
+                      class="bg-orangeColor text-white absolute bottom-4 right-0 text-[12px] py-1 px-1.5 translate-x-1/2 rounded-[6px] before:content-[''] before:absolute before:border-[10px] before:border-transparent before:border-t-orangeColor before:-bottom-[18px]"
+                      >55%</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- Box Three -->
+            <div class="mb-5 flex flex-row items-center">
+              <div
+                class="w-20 h-20 bg-[#22c55e4a] flex justify-center items-center mx-4"
+              >
+                <i class="fa-solid fa-people-group fa-lg text-greenColor"></i>
+              </div>
+              <div class="mr-1.5 text-start flex-1">
+                <span class="text-grayColor">Team</span>
+                <span class="font-bold block mt-1.6 mb-2.5">12</span>
+                <div class="relative flex-1 h-1 bg-[#22c55e4a]">
+                  <span
+                    class="bg-greenColor absolute top-0 left-0 h-full"
+                    style="width: 65%"
+                  >
+                    <span
+                      class="bg-greenColor text-white absolute bottom-4 right-0 text-[12px] py-1 px-1.5 translate-x-1/2 rounded-[6px] before:content-[''] before:absolute before:border-[10px] before:border-transparent before:border-t-greenColor before:-bottom-[18px]"
+                      >65%</span
+                    >
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+          <!-- End Targets -->
+
+          <!-- Start Tickets -->
+          <article class="article pb-5">
+            <div class="special-div">
+              <h2 class="special-heading">Tickets Statistics</h2>
+              <p class="special-para">Everything About Support Tickets</p>
+            </div>
+            <div
+              class="flex items-center justify-center flex-row gap-4 flex-wrap"
+            >
+              <section class="ticket-section">
+                <i
+                  class="fa-regular fa-rectangle-list fa-2x text-orangeColor"
+                ></i>
+                <span class="block font-bold text-[20px]">2500</span>
+                <p class="text-grayColor text-[13px]">Total</p>
+              </section>
+              <section class="ticket-section">
+                <i class="fa-solid fa-spinner fa-2x text-blueColor"></i>
+                <span class="block font-bold text-[20px]">500</span>
+                <p class="text-grayColor text-[13px]">Pending</p>
+              </section>
+              <section class="ticket-section">
+                <i class="fa-regular fa-circle-check fa-2x text-greenColor"></i>
+                <span class="block font-bold text-[20px]">1900</span>
+                <p class="text-grayColor text-[13px]">Closed</p>
+              </section>
+              <section class="ticket-section">
+                <i
+                  class="fa-regular fa-rectangle-xmark fa-2x text-redColor"
+                ></i>
+                <span class="block font-bold text-[20px]">100</span>
+                <p class="text-grayColor text-[13px]">Deleted</p>
+              </section>
+            </div>
+          </article>
+          <!-- End Tickets -->
+          <!-- Start News -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Latest News</h2>
+            </div>
+            <div class="flex flex-col p-5 pt-0">
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/news-01.png"
+                    class="w-[150px] md:w-[100px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span lg:text-[13px]"
+                      >Created SASS Section</span
+                    >
+                    <p class="widget-para">New SASS Examples & Tutorials</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">3 Days Ago</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/news-02.png"
+                    class="w-[150px] md:w-[100px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span lg:text-[13px]"
+                      >Changed The Design</span
+                    >
+                    <p class="widget-para">A Brand New Website Design</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">5 Days Ago</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/news-03.png"
+                    class="w-[150px] md:w-[100px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span lg:text-[13px]"
+                      >Team Increased</span
+                    >
+                    <p class="widget-para">3 Developers Joined The Team</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">7 Days Ago</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/news-04.png"
+                    class="w-[150px] md:w-[100px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span lg:text-[13px]"
+                      >Added Payment Gateway</span
+                    >
+                    <p class="widget-para">Many New Payment Gateways Added</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">9 Days Ago</span>
+              </section>
+            </div>
+          </article>
+          <!-- End News -->
+          <!-- Start Latest Tasks -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Latest Tasks</h2>
+            </div>
+            <div class="p-5 pt-0">
+              <section
+                class="border-b flex flex-row justify-between items-center pb-5 px-0.5 mb-3"
+              >
+                <div class="flex flex-col gap-1 justify-start">
+                  <span class="widget-span lg:text-[16px]"
+                    >Record One New Video</span
+                  >
+                  <p class="text-grayColor text-[15px]">
+                    Record Python Create Exe Project
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete cursor-pointer"></i>
+              </section>
+
+              <section
+                class="border-b flex flex-row justify-between items-center pb-5 px-0.5 mb-3"
+              >
+                <div class="flex flex-col gap-1 justify-start">
+                  <span class="widget-span lg:text-[16px]">Write Article</span>
+                  <p class="text-grayColor text-[15px]">
+                    Write Low Level vs High Level Languages
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete cursor-pointer"></i>
+              </section>
+
+              <section
+                class="border-b flex flex-row justify-between items-center pb-5 px-0.5 mb-3"
+              >
+                <div class="flex flex-col gap-1 justify-start">
+                  <span class="widget-span lg:text-[16px]">Finish Project</span>
+                  <p class="text-grayColor text-[15px]">
+                    Publish Academy Programming Project
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete cursor-pointer"></i>
+              </section>
+
+              <section
+                class="border-b flex flex-row justify-between items-center pb-5 px-0.5 mb-3"
+              >
+                <div class="flex flex-col gap-1 justify-start">
+                  <span class="widget-span lg:text-[16px] done"
+                    >Attend The Meeting</span
+                  >
+                  <p class="text-grayColor text-[15px] done">
+                    Attend The Project Business Analysis Meeting
+                  </p>
+                </div>
+                <i
+                  class="fa-regular fa-trash-can delete cursor-pointer done"
+                ></i>
+              </section>
+
+              <section
+                class="flex flex-row justify-between items-center px-0.5"
+              >
+                <div class="flex flex-col gap-1 justify-start">
+                  <span class="widget-span lg:text-[16px]">Finish Lesson</span>
+                  <p class="text-grayColor text-[15px]">
+                    Finish Teaching Flex Box
+                  </p>
+                </div>
+                <i class="fa-regular fa-trash-can delete cursor-pointer"></i>
+              </section>
+            </div>
+          </article>
+          <!-- End Latest Tasks -->
+          <!-- Start Sreach Items -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Top Sreach Items</h2>
+            </div>
+            <section
+              class="flex flex-row justify-between items-center text-grayColor p-4"
+            >
+              <span class="block">Keyword</span>
+              <span class="block">Sreach Count</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">Programming</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">220</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">JavaScript</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">180</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">PHP</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">160</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">Code</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">145</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">Design</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">110</span>
+            </section>
+
+            <section class="flex flex-row justify-between items-center p-4">
+              <span class="block">Logic</span>
+              <span class="block py-1 px-2 bg-[#eee] rounded-[6px]">95</span>
+            </section>
+          </article>
+          <!-- End Sreach Items -->
+          <!-- Start Latest Uploads -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Latest Uploads</h2>
+            </div>
+            <div class="flex flex-col p-5 pt-0">
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/pdf.svg"
+                    class="w-[70px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span">my-file.pdf</span>
+                    <p class="widget-para text-[16px]">Nader</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">2.9mb</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/avi.svg"
+                    class="w-[70px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span">My-Video-File.avi</span>
+                    <p class="widget-para text-[16px]">Admin</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">4.9mb</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/psd.svg"
+                    class="w-[70px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span">My-Psd-File.pdf</span>
+                    <p class="widget-para text-[16px]">Yousef</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">4.5mb</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4 border-b border-[#eee]"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/dll.svg"
+                    class="w-[70px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span">My-DLL-File.pdf</span>
+                    <p class="widget-para text-[16px]">Admin</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">4.9mb</span>
+              </section>
+
+              <section
+                class="flex flex-col md:flex-row items-center justify-between py-4"
+              >
+                <div
+                  class="flex flex-col items-center md:flex-row gap-4 xl:gap-2"
+                >
+                  <img
+                    src="./imgs/eps.svg"
+                    class="w-[70px] rounded-[6px]"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <span class="widget-span">My-Eps-File.pdf</span>
+                    <p class="widget-para text-[16px]">Desinger</p>
+                  </div>
+                </div>
+                <span class="widget-label-span">8.9mb</span>
+              </section>
+            </div>
+          </article>
+          <!-- End Latest Uploads -->
+          <!-- Start Latest Project -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Latest Project Process</h2>
+            </div>
+            <div class="p-5 relative">
+              <ul
+                class="relative before:absolute before:content-[''] before:left-[11px] before:w-[2px] before:h-full before:bg-blueColor"
+              >
+                <li class="project-li project-done">Got The Project</li>
+                <li class="project-li project-done">Started The Project</li>
+                <li class="project-li project-done">
+                  The Project About To Finish
+                </li>
+                <li class="project-li project-process">Test The Project</li>
+                <li class="project-li">Finish The Project & Get Money</li>
+              </ul>
+              <img
+                src="./imgs/project.png"
+                alt=""
+                class="w-[160px] opacity-[0.4] absolute hidden md:block -bottom-30 right-0"
+              />
+            </div>
+          </article>
+          <!-- End Latest Project -->
+          <!-- Start Reminders -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Reminders</h2>
+            </div>
+            <div class="p-5">
+              <ul>
+                <li class="flex items-center mt-4">
+                  <span
+                    class="block w-4 h-4 rounded-full mr-4 bg-blueColor"
+                  ></span>
+                  <div class="pl-4 border-l-2 border-l-blueColor">
+                    <span class="block font-bold text-[15px]"
+                      >Check My Tasks List</span
+                    >
+                    <p class="text-grayColor text-[13px]">
+                      28/09/2022 - 12:00am
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-center mt-4">
+                  <span
+                    class="block w-4 h-4 rounded-full mr-4 bg-greenColor"
+                  ></span>
+                  <div class="pl-4 border-l-2 border-l-greenColor">
+                    <span class="block font-bold text-[15px]"
+                      >Check My Projects</span
+                    >
+                    <p class="text-grayColor text-[13px]">
+                      26/10/2022 - 12:00am
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-center mt-4">
+                  <span
+                    class="block w-4 h-4 rounded-full mr-4 bg-orangeColor"
+                  ></span>
+                  <div class="pl-4 border-l-2 border-l-orangeColor">
+                    <span class="block font-bold text-[15px]"
+                      >Call All My Clients</span
+                    >
+                    <p class="text-grayColor text-[13px]">
+                      05/11/2022 - 12:00am
+                    </p>
+                  </div>
+                </li>
+                <li class="flex items-center mt-4">
+                  <span
+                    class="block w-4 h-4 rounded-full mr-4 bg-redColor"
+                  ></span>
+                  <div class="pl-4 border-l-2 border-l-redColor">
+                    <span class="block font-bold text-[15px] text-start"
+                      >Finish The Development Workshop</span
+                    >
+                    <p class="text-grayColor text-[13px] text-start">
+                      20/12/2022 - 12:00am
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <!-- End Reminders -->
+          <!-- Start Latest Post -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Latest Post</h2>
+            </div>
+            <section
+              class="p-5 flex flex-col md:flex-row items-center justify-start gap-2"
+            >
+              <img
+                class="w-12 h-12 rounded-full"
+                src="./imgs/avatar.png"
+                alt=""
+              />
+              <div class="flex flex-col">
+                <span class="block font-bold text-[18px]"
+                  >Nader Al Ghussin</span
+                >
+                <p class="text-grayColor text-[14px]">About 3 Hours</p>
+              </div>
+            </section>
+
+            <section class="p-5 my-5 border-y border-[#eee]">
+              <span
+                class="block font-bold text-[#333333b8] text-start capitalize min-h-[110px]"
+                >You can fool all of the people some of the time, and some of
+                the people all of the time, but you can't fool all of the people
+                all of the time.</span
+              >
+            </section>
+
+            <section class="flex flex-row items-center justify-between p-5">
+              <div class="text-garyColor">
+                <i class="fa-regular fa-heart"></i>
+                <span class="">1.8K</span>
+              </div>
+              <div class="text-garyColor">
+                <i class="fa-regular fa-comments"></i>
+                <span class="">500</span>
+              </div>
+            </section>
+          </article>
+          <!-- End Latest Post -->
+          <!-- Start Social Media -->
+          <article class="article">
+            <div class="special-div">
+              <h2 class="special-heading">Socail Media Stats</h2>
+            </div>
+            <section
+              class="py-4 pr-2 flex flex-row justify-between mb-5 items-center bg-[#1da0f238] mx-4 relative"
+            >
+              <div class="flex flex-row items-center gap-1">
+                <i
+                  class="fa-brands fa-twitter fa-2x px-2 icon-rotation bg-[#1da1f2] text-white h-full w-[55px] flex justify-center items-center absolute"
+                ></i>
+                <span class="block ml-16 text-[#1da1f2]">90K Followers</span>
+              </div>
+              <a
+                class="text-[13px] p-1 rounded-[6px] text-white bg-[#1da1f2]"
+                href="#"
+                >Follow</a
+              >
+            </section>
+
+            <section
+              class="py-4 pr-2 flex flex-row justify-between mb-5 items-center bg-[#1876f236] mx-4 relative"
+            >
+              <div class="flex flex-row items-center gap-1">
+                <i
+                  class="fa-brands fa-facebook-f fa-2x px-2 icon-rotation bg-[#1877f2] text-white h-full w-[55px] flex justify-center items-center absolute"
+                ></i>
+                <span class="block ml-16 text-[#1877f2]">1M Likes</span>
+              </div>
+              <a
+                class="text-[13px] py-1 px-1.5 rounded-[6px] text-white bg-[#1877f2]"
+                href="#"
+                >Like</a
+              >
+            </section>
+
+            <section
+              class="py-4 pr-2 flex flex-row justify-between mb-5 items-center bg-[#ff000044] mx-4 relative"
+            >
+              <div class="flex flex-row items-center gap-1">
+                <i
+                  class="fa-brands fa-youtube fa-2x px-2 icon-rotation bg-[#ff0000] text-white h-full w-[55px] flex justify-center items-center absolute"
+                ></i>
+                <span class="block ml-16 text-[#ff0000]">100k Subs</span>
+              </div>
+              <a
+                class="text-[13px] py-1 px-1.5 rounded-[6px] text-white bg-[#ff0000]"
+                href="#"
+                >Subscribe</a
+              >
+            </section>
+
+            <section
+              class="py-4 pr-2 flex flex-row justify-between mb-5 items-center bg-[#0076b54d] mx-4 relative"
+            >
+              <div class="flex flex-row items-center gap-1">
+                <i
+                  class="fa-brands fa-linkedin fa-2x px-2 icon-rotation bg-[#0077b5] text-white h-full w-[55px] flex justify-center items-center absolute"
+                ></i>
+                <span class="block ml-16 text-[#0077b5]">60k Followers</span>
+              </div>
+              <a
+                class="text-[13px] py-1 px-1.5 rounded-[6px] text-white bg-[#0077b5]"
+                href="#"
+                >Follow</a
+              >
+            </section>
+          </article>
+          <!-- End Social Media -->
+        </div>
+        <!-- Start Table -->
+        <div class="projects p-5 bg-white rounded-[10px] m-2.5 md:m-5">
+          <h2 class="special-heading">Projects</h2>
+          <div class="responsive-table overflow-x-auto">
+            <table class="text-[15px] w-full min-w-[1000px] border-spacing-0">
+              <thead>
+                <tr>
+                  <td class="bg-[#eee] font-bold p-4">Name</td>
+                  <td class="bg-[#eee] font-bold p-4">Finish Date</td>
+                  <td class="bg-[#eee] font-bold p-4">Client</td>
+                  <td class="bg-[#eee] font-bold p-4">Price</td>
+                  <td class="bg-[#eee] font-bold p-4">Team</td>
+                  <td class="bg-[#eee] font-bold p-4">Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Ministry Wikipedia
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    10 May 2022
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Ministry
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $5300
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-05.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4">
+                    <span
+                      class="label p-1 rounded-[6px] bg-orangeColor text-white"
+                      >Pending</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Nader Shop
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    12 Oct 2021
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Nader Company
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $1500
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-05.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    <span
+                      class="label p-1 rounded-[6px] bg-blueColor text-white"
+                      >In Progress</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Bouba App
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    05 Sep 2021
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Bouba
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $800
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    <span
+                      class="label p-1 rounded-[6px] bg-greenColor text-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Mahmoud Website
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    22 May 2021
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Mahmoud
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $600
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    <span
+                      class="label p-1 rounded-[6px] bg-greenColor text-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Sayed Website
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    24 May 2021
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Sayed
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $300
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    <span class="label p-1 rounded-[6px] bg-redColor text-white"
+                      >Rejected</span
+                    >
+                  </td>
+                </tr>
+                <tr class="hover:bg-[#faf7f7] duration-300">
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Arena Application
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    01 Mar 2021
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    Arena Company
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    $2600
+                  </td>
+                  <td
+                    class="duration-300 border-[1px] border-[#eee] flex pl-4 py-4"
+                  >
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white"
+                      decoding="async"
+                      src="imgs/team-01.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-02.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                    <img
+                      class="w-8 h-8 rounded-full p-[2px] bg-white -ml-5"
+                      src="imgs/team-03.png"
+                      alt=""
+                    />
+                  </td>
+                  <td class="duration-300 border-[1px] border-[#eee] pl-4 py-4">
+                    <span
+                      class="label p-1 rounded-[6px] bg-greenColor text-white"
+                      >Completed</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- End Table -->
+        <!-- End content -->
+      </section>
+    </div>
+  </body>
+</html>
